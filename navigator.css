@@ -2,6 +2,8 @@
    Navigator — Minimal Monochrome Stylesheet
    ============================================ */
 
+
+/*siddharth*/
 *,
 *::before,
 *::after {
@@ -161,7 +163,7 @@ body {
   color: var(--black);
 }
 
-#search-dropdown li + li {
+#search-dropdown li+li {
   border-top: 1px solid var(--gray-100);
 }
 
@@ -180,8 +182,15 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #results-heading {
@@ -332,11 +341,21 @@ body {
   flex-shrink: 0;
 }
 
-.avail-yes .avail-dot { background-color: var(--green); }
-.avail-yes { color: var(--green); }
+.avail-yes .avail-dot {
+  background-color: var(--green);
+}
 
-.avail-no .avail-dot { background-color: var(--gray-400); }
-.avail-no { color: var(--gray-400); }
+.avail-yes {
+  color: var(--green);
+}
+
+.avail-no .avail-dot {
+  background-color: var(--gray-400);
+}
+
+.avail-no {
+  color: var(--gray-400);
+}
 
 /* --- Mobile Cards (hidden on desktop) --- */
 .cards-container {
