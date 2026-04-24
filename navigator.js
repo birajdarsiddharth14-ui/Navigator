@@ -591,6 +591,46 @@ var cityAliases = {
   "chh. sambhajinagar": "aurangabad"
 };
 
+/* --- State → Cities mapping (all Indian states/UTs) --- */
+var stateCities = {
+  "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore", "Kurnool", "Tirupati", "Rajahmundry", "Kakinada"],
+  "Arunachal Pradesh": ["Itanagar", "Naharlagun", "Pasighat", "Tawang", "Ziro", "Bomdila"],
+  "Assam": ["Guwahati", "Silchar", "Dibrugarh", "Jorhat", "Nagaon", "Tinsukia", "Tezpur"],
+  "Bihar": ["Patna", "Gaya", "Bhagalpur", "Muzaffarpur", "Purnia", "Darbhanga", "Ara", "Begusarai"],
+  "Chhattisgarh": ["Raipur", "Bhilai", "Bilaspur", "Korba", "Durg", "Rajnandgaon", "Jagdalpur"],
+  "Goa": ["Panaji", "Margao", "Vasco da Gama", "Mapusa", "Ponda", "Calangute"],
+  "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar", "Jamnagar", "Gandhinagar", "Junagadh"],
+  "Haryana": ["Gurugram", "Faridabad", "Panipat", "Ambala", "Karnal", "Hisar", "Rohtak", "Sonipat"],
+  "Himachal Pradesh": ["Shimla", "Manali", "Dharamshala", "Mandi", "Solan", "Kullu", "Palampur"],
+  "Jharkhand": ["Ranchi", "Jamshedpur", "Dhanbad", "Bokaro", "Deoghar", "Hazaribagh", "Giridih"],
+  "Karnataka": ["Bangalore", "Mysore", "Hubli", "Mangalore", "Belgaum", "Davangere", "Shimoga", "Tumkur"],
+  "Kerala": ["Thiruvananthapuram", "Kochi", "Kozhikode", "Thrissur", "Kollam", "Palakkad", "Kannur", "Alappuzha"],
+  "Madhya Pradesh": ["Bhopal", "Indore", "Jabalpur", "Gwalior", "Ujjain", "Sagar", "Rewa", "Satna"],
+  "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Thane", "Nashik", "Aurangabad", "Solapur", "Kolhapur", "Sangli", "Navi Mumbai"],
+  "Manipur": ["Imphal", "Thoubal", "Bishnupur", "Churachandpur", "Kakching"],
+  "Meghalaya": ["Shillong", "Tura", "Nongstoin", "Jowai", "Baghmara"],
+  "Mizoram": ["Aizawl", "Lunglei", "Champhai", "Serchhip", "Kolasib"],
+  "Nagaland": ["Kohima", "Dimapur", "Mokokchung", "Tuensang", "Wokha"],
+  "Odisha": ["Bhubaneswar", "Cuttack", "Rourkela", "Berhampur", "Sambalpur", "Puri", "Balasore"],
+  "Punjab": ["Chandigarh", "Ludhiana", "Amritsar", "Jalandhar", "Patiala", "Bathinda", "Mohali", "Pathankot"],
+  "Rajasthan": ["Jaipur", "Jodhpur", "Udaipur", "Kota", "Ajmer", "Bikaner", "Alwar", "Bhilwara"],
+  "Sikkim": ["Gangtok", "Namchi", "Pelling", "Mangan", "Ravangla"],
+  "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Erode", "Vellore"],
+  "Telangana": ["Hyderabad", "Warangal", "Nizamabad", "Karimnagar", "Khammam", "Mahbubnagar", "Secunderabad"],
+  "Tripura": ["Agartala", "Udaipur", "Dharmanagar", "Kailashahar", "Belonia"],
+  "Uttar Pradesh": ["Lucknow", "Noida", "Kanpur", "Agra", "Varanasi", "Prayagraj", "Ghaziabad", "Meerut"],
+  "Uttarakhand": ["Dehradun", "Haridwar", "Rishikesh", "Nainital", "Haldwani", "Roorkee", "Mussoorie"],
+  "West Bengal": ["Kolkata", "Howrah", "Durgapur", "Siliguri", "Asansol", "Bardhaman", "Kharagpur"],
+  "Delhi": ["New Delhi", "Dwarka", "Rohini", "Saket", "Connaught Place", "Lajpat Nagar", "Karol Bagh"],
+  "Jammu & Kashmir": ["Srinagar", "Jammu", "Anantnag", "Baramulla", "Sopore", "Kathua"],
+  "Ladakh": ["Leh", "Kargil", "Diskit", "Padum"],
+  "Chandigarh": ["Chandigarh"],
+  "Puducherry": ["Puducherry", "Karaikal", "Mahe", "Yanam"],
+  "Andaman & Nicobar": ["Port Blair", "Havelock Island", "Neil Island"],
+  "Dadra & Nagar Haveli and Daman & Diu": ["Daman", "Diu", "Silvassa"],
+  "Lakshadweep": ["Kavaratti", "Agatti", "Minicoy"]
+};
+
 var serviceLinks = {
   "Amazon": "https://www.amazon.in",
   "Flipkart": "https://www.flipkart.com",
@@ -639,44 +679,89 @@ var activeFilter = 'All';
    ============================================ */
 
 searchInput.addEventListener('input', function () {
+  // Focus globe on India when user starts typing
+  if (this.value.trim().length === 1 && window.globeFocusLocation) {
+    window.globeFocusLocation('india');
+  }
+
   var query = this.value.trim().toLowerCase();
   dropdown.innerHTML = '';
 
   if (!query) {
     dropdown.classList.add('hidden');
+    
+    // Reset layout and globe if input is cleared
+    var contentArea = document.getElementById('content-area');
+    if (contentArea) contentArea.classList.remove('results-active');
+    resultsSection.classList.add('hidden');
+    if (window.globeReset) window.globeReset();
+    
     return;
   }
 
+  /* --- 1. Direct city matches (existing behavior) --- */
   var cityKeys = Object.keys(data);
-  var matches = [];
+  var directMatches = [];
 
   cityKeys.forEach(function (key) {
     var displayName = cityNames[key].toLowerCase();
     if (key.indexOf(query) === 0 || displayName.indexOf(query) === 0) {
-      matches.push({ key: key, alias: null });
+      directMatches.push({ key: key, alias: null });
     }
   });
 
+  /* --- 2. Alias matches (existing behavior) --- */
   Object.keys(cityAliases).forEach(function (alias) {
     var target = cityAliases[alias];
     if (alias.indexOf(query) === 0) {
-      var already = matches.some(function (m) { return m.key === target; });
+      var already = directMatches.some(function (m) { return m.key === target; });
       if (!already) {
-        matches.push({ key: target, alias: alias });
+        directMatches.push({ key: target, alias: alias });
       } else {
-        matches.forEach(function (m) {
+        directMatches.forEach(function (m) {
           if (m.key === target && !m.alias) m.alias = alias;
         });
       }
     }
   });
 
-  if (matches.length === 0) {
+  /* --- 3. State → City grouped matches --- */
+  var stateMatches = [];  // { state: "...", cities: ["..."] }
+  var directCityNames = directMatches.map(function (m) {
+    return cityNames[m.key].toLowerCase();
+  });
+
+  Object.keys(stateCities).forEach(function (state) {
+    var stateLower = state.toLowerCase();
+    if (stateLower.indexOf(query) !== -1) {
+      // State name matches — show its cities (filter out already-shown direct matches)
+      var cities = stateCities[state].filter(function (city) {
+        return directCityNames.indexOf(city.toLowerCase()) === -1;
+      });
+      if (cities.length > 0) {
+        stateMatches.push({ state: state, cities: cities });
+      }
+    } else {
+      // Check if any city under this state matches the query (but isn't in data)
+      var matchingCities = stateCities[state].filter(function (city) {
+        var cityLow = city.toLowerCase();
+        return cityLow.indexOf(query) === 0
+          && directCityNames.indexOf(cityLow) === -1;
+      });
+      if (matchingCities.length > 0) {
+        stateMatches.push({ state: state, cities: matchingCities });
+      }
+    }
+  });
+
+  /* --- Nothing found at all --- */
+  if (directMatches.length === 0 && stateMatches.length === 0) {
     dropdown.classList.add('hidden');
     return;
   }
 
-  matches.forEach(function (match) {
+  /* --- Render direct city matches first --- */
+  directMatches.forEach(function (match) {
     var li = document.createElement('li');
     li.textContent = cityNames[match.key];
     if (match.alias) {
@@ -690,6 +775,40 @@ searchInput.addEventListener('input', function () {
       selectCity(match.key);
     });
     dropdown.appendChild(li);
+  });
+
+  /* --- Render state-grouped results --- */
+  stateMatches.forEach(function (group) {
+    // State header (non-clickable)
+    var header = document.createElement('li');
+    header.className = 'dropdown-state-header';
+    header.textContent = group.state;
+    dropdown.appendChild(header);
+
+    // Cities under this state
+    group.cities.forEach(function (cityName) {
+      var li = document.createElement('li');
+      li.className = 'dropdown-state-city';
+      li.textContent = cityName;
+
+      // Check if this city exists in data (navigable)
+      var cityKey = cityName.toLowerCase().replace(/[\s\-]/g, '');
+      if (data[cityKey]) {
+        li.setAttribute('data-city', cityKey);
+        li.addEventListener('click', function () {
+          selectCity(cityKey);
+        });
+      } else {
+        // City not in data — show as non-navigable hint
+        var hint = document.createElement('span');
+        hint.className = 'alias-hint';
+        hint.textContent = ' (coming soon)';
+        li.appendChild(hint);
+        li.style.cursor = 'default';
+        li.style.opacity = '0.6';
+      }
+      dropdown.appendChild(li);
+    });
   });
 
   dropdown.classList.remove('hidden');
@@ -748,6 +867,11 @@ function selectCity(cityKey) {
 
   renderServices();
   resultsSection.classList.remove('hidden');
+
+  // Trigger globe animation & layout transition
+  var contentArea = document.getElementById('content-area');
+  if (contentArea) contentArea.classList.add('results-active');
+  if (window.globeFocusLocation) window.globeFocusLocation(cityKey);
 }
 
 /* ============================================

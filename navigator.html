@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navigator — Delivery Services Across Maharashtra</title>
+  <title>Navigator — Delivery Services Across India</title>
   <meta name="description"
-    content="Find which delivery platforms are available in your city across Maharashtra, India. Check Amazon, Flipkart, Blinkit, Zomato, Swiggy, Porter availability and delivery times.">
+    content="Find which delivery platforms are available in your city across India. Search by state or city. Check Amazon, Flipkart, Blinkit, Zomato, Swiggy, Porter availability and delivery times.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
   <link rel="stylesheet" href="navigator.css">
 </head>
 
@@ -17,7 +18,7 @@
 
   <header id="site-header">
     <h1>Navigator</h1>
-    <p class="subtitle">Delivery services across Maharashtra</p>
+    <p class="subtitle">Delivery services across India</p>
   </header>
 
   <main>
@@ -28,12 +29,17 @@
           <circle cx="11" cy="11" r="8" />
           <line x1="21" y1="21" x2="16.65" y2="16.65" />
         </svg>
-        <input type="text" id="city-search" placeholder="Search a city… e.g. Mumbai, Pune" autocomplete="off">
+        <input type="text" id="city-search" placeholder="Search a city or state… e.g. Mumbai, Karnataka" autocomplete="off">
         <ul id="search-dropdown" class="hidden"></ul>
       </div>
     </section>
 
-    <section id="results" class="hidden">
+    <div id="content-area">
+      <div id="globe-container">
+        <canvas id="globe-canvas"></canvas>
+      </div>
+
+      <section id="results" class="hidden">
       <h2 id="results-heading"></h2>
 
       <div id="filter-pills">
@@ -60,14 +66,15 @@
       </div>
 
       <div id="services-cards" class="cards-container"></div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer>
     <div class="footer-inner">
       <div class="footer-left">
         <span class="footer-brand">Navigator</span>
-        <span class="footer-tagline">Delivery services across Maharashtra</span>
+        <span class="footer-tagline">Delivery services across India</span>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="#">About</a>
@@ -83,6 +90,7 @@
   </footer>
 
   <script src="navigator.js"></script>
+  <script src="globe.js"></script>
 </body>
 
 </html>
