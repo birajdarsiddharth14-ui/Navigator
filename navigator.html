@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigator — Delivery Services Across Maharashtra</title>
+  <meta name="description" content="Find which delivery platforms are available in your city across Maharashtra, India. Check Amazon, Flipkart, Blinkit, Zomato, Swiggy, Porter availability and delivery times.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="navigator.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <h1>Navigator</h1>
+    <p class="subtitle">Delivery services across Maharashtra</p>
+  </header>
+
+  <main>
+    <section id="search-section">
+      <div class="search-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="city-search" placeholder="Search a city… e.g. Mumbai, Pune" autocomplete="off">
+        <ul id="search-dropdown" class="hidden"></ul>
+      </div>
+    </section>
+
+    <section id="results" class="hidden">
+      <h2 id="results-heading"></h2>
+
+      <div id="filter-pills">
+        <button class="pill active" data-filter="All">All</button>
+        <button class="pill" data-filter="E-Commerce">E-Commerce</button>
+        <button class="pill" data-filter="Quick Commerce">Quick Commerce</button>
+        <button class="pill" data-filter="Food Delivery">Food Delivery</button>
+        <button class="pill" data-filter="Courier">Courier</button>
+      </div>
+
+      <div class="table-container">
+        <table id="services-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Type</th>
+              <th>Avg. Delivery Time</th>
+              <th>24×7</th>
+            </tr>
+          </thead>
+          <tbody id="services-body"></tbody>
+        </table>
+      </div>
+
+      <div id="services-cards" class="cards-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">Navigator</span>
+        <span class="footer-tagline">Delivery services across Maharashtra</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#">About</a>
+        <span class="footer-sep">·</span>
+        <a href="#">Contact</a>
+        <span class="footer-sep">·</span>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Navigator</p>
+    </div>
+  </footer>
+
+  <script src="navigator.js"></script>
+</body>
+</html>
