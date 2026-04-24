@@ -42,6 +42,8 @@
   --food-text: #92400e;
   --courier-bg: #f3e8ff;
   --courier-text: #6b21a8;
+  --cab-bg: #e0f2f1;
+  --cab-text: #00695c;
 
   --font: 'Inter', system-ui, -apple-system, sans-serif;
   --radius: 6px;
@@ -321,6 +323,11 @@ body {
 .type-courier {
   background-color: var(--courier-bg);
   color: var(--courier-text);
+}
+
+.type-cab {
+  background-color: var(--cab-bg);
+  color: var(--cab-text);
 }
 
 /* --- Availability Dot/Pill --- */

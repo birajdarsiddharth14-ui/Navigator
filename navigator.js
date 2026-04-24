@@ -7,6 +7,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "35-50 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "35-50 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-8 mins" },
   ],
   nagpur: [
     { name: "Amazon", type: "E-Commerce", time: "2-4 days" },
@@ -17,6 +20,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "3-7 mins" },
+    { name: "Ola", type: "Cab Services", time: "3-7 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-5 mins" },
   ],
   mumbai: [
     { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
@@ -28,6 +34,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "25-40 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "25-40 mins" },
     { name: "Porter", type: "Courier", time: "Same day" },
+    { name: "Uber", type: "Cab Services", time: "3-7 mins" },
+    { name: "Ola", type: "Cab Services", time: "3-7 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-5 mins" },
   ],
   pune: [
     { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
@@ -39,6 +48,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "3-7 mins" },
+    { name: "Ola", type: "Cab Services", time: "3-7 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-5 mins" },
   ],
   kolhapur: [
     { name: "Amazon", type: "E-Commerce", time: "3-5 days" },
@@ -47,6 +59,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "35-50 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "35-50 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-8 mins" },
   ],
   nashik: [
     { name: "Amazon", type: "E-Commerce", time: "2-4 days" },
@@ -56,6 +71,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-8 mins" },
   ],
   solapur: [
     { name: "Amazon", type: "E-Commerce", time: "3-5 days" },
@@ -64,6 +82,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "35-50 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "35-50 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-8 mins" },
   ],
   jalgaon: [
     { name: "Amazon", type: "E-Commerce", time: "4-6 days" },
@@ -83,6 +104,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "25-40 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "25-40 mins" },
     { name: "Porter", type: "Courier", time: "Same day" },
+    { name: "Uber", type: "Cab Services", time: "3-7 mins" },
+    { name: "Ola", type: "Cab Services", time: "3-7 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-5 mins" },
   ],
   aurangabad: [
     { name: "Amazon", type: "E-Commerce", time: "3-4 days" },
@@ -92,6 +116,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-8 mins" },
   ],
   akola: [
     { name: "Amazon", type: "E-Commerce", time: "4-6 days" },
@@ -111,6 +138,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "25-40 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "25-40 mins" },
     { name: "Porter", type: "Courier", time: "Same day" },
+    { name: "Uber", type: "Cab Services", time: "3-7 mins" },
+    { name: "Ola", type: "Cab Services", time: "3-7 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-5 mins" },
   ],
   mirabhayandar: [
     { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
@@ -122,6 +152,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "25-40 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "25-40 mins" },
     { name: "Porter", type: "Courier", time: "Same day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-8 mins" },
   ],
   kalyan: [
     { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
@@ -131,6 +164,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-8 mins" },
   ],
   dombivli: [
     { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
@@ -140,6 +176,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-8 mins" },
   ],
   vasaivirar: [
     { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
@@ -149,6 +188,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-8 mins" },
   ],
   panvel: [
     { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
@@ -158,6 +200,9 @@ var data = {
     { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
     { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
     { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Uber", type: "Cab Services", time: "5-10 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-8 mins" },
   ],
   ulhasnagar: [
     { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
@@ -556,30 +601,35 @@ var serviceLinks = {
   "Swiggy Instamart": "https://www.swiggy.com/instamart",
   "Zomato": "https://www.zomato.com",
   "Swiggy": "https://www.swiggy.com",
-  "Porter": "https://www.porter.in"
+  "Porter": "https://www.porter.in",
+  "Uber": "https://www.uber.com",
+  "Ola": "https://www.olacabs.com",
+  "Rapido": "https://www.rapido.bike"
 };
 
 var availability247 = {
   "Amazon": false, "Flipkart": false, "Meesho": false, "BigBasket": false,
   "Blinkit": true, "Zepto": true, "Swiggy Instamart": true,
-  "Zomato": false, "Swiggy": false, "Porter": false
+  "Zomato": false, "Swiggy": false, "Porter": false,
+  "Uber": true, "Ola": true, "Rapido": true
 };
 
 var typeClass = {
   "E-Commerce": "type-ecom",
   "Quick Commerce": "type-quick",
   "Food Delivery": "type-food",
-  "Courier": "type-courier"
+  "Courier": "type-courier",
+  "Cab Services": "type-cab"
 };
 
 /* --- DOM References --- */
-var searchInput   = document.getElementById('city-search');
-var dropdown      = document.getElementById('search-dropdown');
+var searchInput = document.getElementById('city-search');
+var dropdown = document.getElementById('search-dropdown');
 var resultsSection = document.getElementById('results');
 var resultsHeading = document.getElementById('results-heading');
-var servicesBody  = document.getElementById('services-body');
-var servicesCards  = document.getElementById('services-cards');
-var filterPills   = document.querySelectorAll('.pill');
+var servicesBody = document.getElementById('services-body');
+var servicesCards = document.getElementById('services-cards');
+var filterPills = document.querySelectorAll('.pill');
 
 var selectedCity = null;
 var activeFilter = 'All';
@@ -588,7 +638,7 @@ var activeFilter = 'All';
    Search & Dropdown
    ============================================ */
 
-searchInput.addEventListener('input', function() {
+searchInput.addEventListener('input', function () {
   var query = this.value.trim().toLowerCase();
   dropdown.innerHTML = '';
 
@@ -600,21 +650,21 @@ searchInput.addEventListener('input', function() {
   var cityKeys = Object.keys(data);
   var matches = [];
 
-  cityKeys.forEach(function(key) {
+  cityKeys.forEach(function (key) {
     var displayName = cityNames[key].toLowerCase();
     if (key.indexOf(query) === 0 || displayName.indexOf(query) === 0) {
       matches.push({ key: key, alias: null });
     }
   });
 
-  Object.keys(cityAliases).forEach(function(alias) {
+  Object.keys(cityAliases).forEach(function (alias) {
     var target = cityAliases[alias];
     if (alias.indexOf(query) === 0) {
-      var already = matches.some(function(m) { return m.key === target; });
+      var already = matches.some(function (m) { return m.key === target; });
       if (!already) {
         matches.push({ key: target, alias: alias });
       } else {
-        matches.forEach(function(m) {
+        matches.forEach(function (m) {
           if (m.key === target && !m.alias) m.alias = alias;
         });
       }
@@ -626,7 +676,7 @@ searchInput.addEventListener('input', function() {
     return;
   }
 
-  matches.forEach(function(match) {
+  matches.forEach(function (match) {
     var li = document.createElement('li');
     li.textContent = cityNames[match.key];
     if (match.alias) {
@@ -636,7 +686,7 @@ searchInput.addEventListener('input', function() {
       li.appendChild(hint);
     }
     li.setAttribute('data-city', match.key);
-    li.addEventListener('click', function() {
+    li.addEventListener('click', function () {
       selectCity(match.key);
     });
     dropdown.appendChild(li);
@@ -645,12 +695,12 @@ searchInput.addEventListener('input', function() {
   dropdown.classList.remove('hidden');
 });
 
-searchInput.addEventListener('keydown', function(e) {
+searchInput.addEventListener('keydown', function (e) {
   var items = dropdown.querySelectorAll('li');
   if (items.length === 0) return;
 
   var currentIndex = -1;
-  items.forEach(function(item, i) {
+  items.forEach(function (item, i) {
     if (item.classList.contains('active')) currentIndex = i;
   });
 
@@ -674,7 +724,7 @@ searchInput.addEventListener('keydown', function(e) {
   }
 });
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
   if (!e.target.closest('.search-wrapper')) {
     dropdown.classList.add('hidden');
   }
@@ -692,7 +742,7 @@ function selectCity(cityKey) {
   resultsHeading.textContent = 'Services in ' + cityNames[cityKey];
   activeFilter = 'All';
 
-  filterPills.forEach(function(p) {
+  filterPills.forEach(function (p) {
     p.classList.toggle('active', p.getAttribute('data-filter') === 'All');
   });
 
@@ -704,9 +754,9 @@ function selectCity(cityKey) {
    Filter Pills
    ============================================ */
 
-filterPills.forEach(function(pill) {
-  pill.addEventListener('click', function() {
-    filterPills.forEach(function(p) { p.classList.remove('active'); });
+filterPills.forEach(function (pill) {
+  pill.addEventListener('click', function () {
+    filterPills.forEach(function (p) { p.classList.remove('active'); });
     pill.classList.add('active');
     activeFilter = pill.getAttribute('data-filter');
     renderServices();
@@ -723,10 +773,10 @@ function renderServices() {
   var services = data[selectedCity];
   var filtered = (activeFilter === 'All')
     ? services
-    : services.filter(function(s) { return s.type === activeFilter; });
+    : services.filter(function (s) { return s.type === activeFilter; });
 
   servicesBody.innerHTML = '';
-  filtered.forEach(function(service) {
+  filtered.forEach(function (service) {
     var row = document.createElement('tr');
     var is247 = availability247[service.name] || false;
     var availClass = is247 ? 'avail-yes' : 'avail-no';
@@ -742,7 +792,7 @@ function renderServices() {
   });
 
   servicesCards.innerHTML = '';
-  filtered.forEach(function(service) {
+  filtered.forEach(function (service) {
     var is247 = availability247[service.name] || false;
     var availClass = is247 ? 'avail-yes' : 'avail-no';
     var availLabel = is247 ? 'Yes' : 'No';
@@ -751,12 +801,12 @@ function renderServices() {
     card.className = 'service-card';
     card.innerHTML =
       '<div class="card-header">' +
-        '<a class="service-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + service.name + '<span class="ext-arrow">\u2197</span></a>' +
-        '<span class="type-tag ' + typeClass[service.type] + '">' + service.type + '</span>' +
+      '<a class="service-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + service.name + '<span class="ext-arrow">\u2197</span></a>' +
+      '<span class="type-tag ' + typeClass[service.type] + '">' + service.type + '</span>' +
       '</div>' +
       '<div class="card-meta">' +
-        '<span class="card-time">' + service.time + '</span>' +
-        '<span class="avail-pill ' + availClass + '"><span class="avail-dot"></span>24\u00d77: ' + availLabel + '</span>' +
+      '<span class="card-time">' + service.time + '</span>' +
+      '<span class="avail-pill ' + availClass + '"><span class="avail-dot"></span>24\u00d77: ' + availLabel + '</span>' +
       '</div>';
     servicesCards.appendChild(card);
   });
