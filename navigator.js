@@ -517,6 +517,160 @@ var data = {
     { name: "Flipkart", type: "E-Commerce", time: "5-7 days" },
     { name: "Porter", type: "Courier", time: "2-3 days" },
   ],
+  delhi: [
+    { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "1-2 days" },
+    { name: "Meesho", type: "E-Commerce", time: "2-3 days" },
+    { name: "BigBasket", type: "E-Commerce", time: "Same day / Next day" },
+    { name: "Blinkit", type: "Quick Commerce", time: "10-15 mins" },
+    { name: "Zepto", type: "Quick Commerce", time: "10-15 mins" },
+    { name: "Swiggy Instamart", type: "Quick Commerce", time: "10-20 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "20-30 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "20-30 mins" },
+    { name: "Porter", type: "Courier", time: "Same day" },
+    { name: "Delhivery", type: "Courier", time: "1-2 days" },
+    { name: "DTDC", type: "Courier", time: "1-2 days" },
+    { name: "Uber", type: "Cab Services", time: "3-5 mins" },
+    { name: "Ola", type: "Cab Services", time: "3-5 mins" },
+    { name: "Rapido", type: "Cab Services", time: "2-4 mins" },
+  ],
+  bangalore: [
+    { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "1-2 days" },
+    { name: "Meesho", type: "E-Commerce", time: "2-3 days" },
+    { name: "BigBasket", type: "E-Commerce", time: "Same day / Next day" },
+    { name: "Blinkit", type: "Quick Commerce", time: "10-15 mins" },
+    { name: "Zepto", type: "Quick Commerce", time: "10-15 mins" },
+    { name: "Swiggy Instamart", type: "Quick Commerce", time: "10-20 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "20-30 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "20-30 mins" },
+    { name: "Porter", type: "Courier", time: "Same day" },
+    { name: "Delhivery", type: "Courier", time: "1-2 days" },
+    { name: "DTDC", type: "Courier", time: "1-2 days" },
+    { name: "Uber", type: "Cab Services", time: "3-5 mins" },
+    { name: "Ola", type: "Cab Services", time: "3-5 mins" },
+    { name: "Rapido", type: "Cab Services", time: "2-4 mins" },
+  ],
+  hyderabad: [
+    { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "2-3 days" },
+    { name: "Meesho", type: "E-Commerce", time: "3-4 days" },
+    { name: "BigBasket", type: "E-Commerce", time: "Same day / Next day" },
+    { name: "Blinkit", type: "Quick Commerce", time: "15-20 mins" },
+    { name: "Zepto", type: "Quick Commerce", time: "15-20 mins" },
+    { name: "Swiggy Instamart", type: "Quick Commerce", time: "15-25 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "25-35 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "25-35 mins" },
+    { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Delhivery", type: "Courier", time: "2-3 days" },
+    { name: "DTDC", type: "Courier", time: "2-3 days" },
+    { name: "Uber", type: "Cab Services", time: "4-6 mins" },
+    { name: "Ola", type: "Cab Services", time: "4-6 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-5 mins" },
+  ],
+  chennai: [
+    { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "2-3 days" },
+    { name: "Meesho", type: "E-Commerce", time: "3-4 days" },
+    { name: "BigBasket", type: "E-Commerce", time: "Same day / Next day" },
+    { name: "Blinkit", type: "Quick Commerce", time: "15-20 mins" },
+    { name: "Zepto", type: "Quick Commerce", time: "15-20 mins" },
+    { name: "Swiggy Instamart", type: "Quick Commerce", time: "15-25 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "25-35 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "25-35 mins" },
+    { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Delhivery", type: "Courier", time: "2-3 days" },
+    { name: "DTDC", type: "Courier", time: "2-3 days" },
+    { name: "Uber", type: "Cab Services", time: "4-7 mins" },
+    { name: "Ola", type: "Cab Services", time: "4-7 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-6 mins" },
+  ],
+  kolkata: [
+    { name: "Amazon", type: "E-Commerce", time: "2-3 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "2-3 days" },
+    { name: "Meesho", type: "E-Commerce", time: "3-5 days" },
+    { name: "BigBasket", type: "E-Commerce", time: "Same day / Next day" },
+    { name: "Blinkit", type: "Quick Commerce", time: "15-25 mins" },
+    { name: "Zepto", type: "Quick Commerce", time: "15-25 mins" },
+    { name: "Swiggy Instamart", type: "Quick Commerce", time: "20-30 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "30-40 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "30-40 mins" },
+    { name: "Porter", type: "Courier", time: "Same day / Next day" },
+    { name: "Delhivery", type: "Courier", time: "2-3 days" },
+    { name: "DTDC", type: "Courier", time: "2-3 days" },
+    { name: "Uber", type: "Cab Services", time: "5-8 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-8 mins" },
+    { name: "Rapido", type: "Cab Services", time: "4-7 mins" },
+  ],
+  ahmedabad: [
+    { name: "Amazon", type: "E-Commerce", time: "2-3 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "2-3 days" },
+    { name: "Meesho", type: "E-Commerce", time: "3-4 days" },
+    { name: "BigBasket", type: "E-Commerce", time: "Same day / Next day" },
+    { name: "Blinkit", type: "Quick Commerce", time: "15-25 mins" },
+    { name: "Swiggy Instamart", type: "Quick Commerce", time: "15-25 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "25-35 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "25-35 mins" },
+    { name: "Delhivery", type: "Courier", time: "2-3 days" },
+    { name: "DTDC", type: "Courier", time: "2-3 days" },
+    { name: "Uber", type: "Cab Services", time: "4-7 mins" },
+    { name: "Ola", type: "Cab Services", time: "4-7 mins" },
+    { name: "Rapido", type: "Cab Services", time: "3-6 mins" },
+  ],
+  jaipur: [
+    { name: "Amazon", type: "E-Commerce", time: "2-3 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "2-4 days" },
+    { name: "Meesho", type: "E-Commerce", time: "3-5 days" },
+    { name: "Blinkit", type: "Quick Commerce", time: "20-30 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "30-40 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "30-40 mins" },
+    { name: "Delhivery", type: "Courier", time: "2-3 days" },
+    { name: "DTDC", type: "Courier", time: "2-4 days" },
+    { name: "Uber", type: "Cab Services", time: "5-8 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-8 mins" },
+    { name: "Rapido", type: "Cab Services", time: "4-7 mins" },
+  ],
+  lucknow: [
+    { name: "Amazon", type: "E-Commerce", time: "2-3 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "2-4 days" },
+    { name: "Meesho", type: "E-Commerce", time: "3-5 days" },
+    { name: "Blinkit", type: "Quick Commerce", time: "20-30 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "30-45 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "30-45 mins" },
+    { name: "Delhivery", type: "Courier", time: "2-3 days" },
+    { name: "DTDC", type: "Courier", time: "2-4 days" },
+    { name: "Uber", type: "Cab Services", time: "5-9 mins" },
+    { name: "Ola", type: "Cab Services", time: "5-9 mins" },
+    { name: "Rapido", type: "Cab Services", time: "4-8 mins" },
+  ],
+  bhopal: [
+    { name: "Amazon", type: "E-Commerce", time: "3-4 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "3-4 days" },
+    { name: "Meesho", type: "E-Commerce", time: "4-6 days" },
+    { name: "Zomato", type: "Food Delivery", time: "35-50 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "35-50 mins" },
+    { name: "Delhivery", type: "Courier", time: "3-4 days" },
+    { name: "DTDC", type: "Courier", time: "3-4 days" },
+    { name: "Ola", type: "Cab Services", time: "6-10 mins" },
+    { name: "Rapido", type: "Cab Services", time: "5-9 mins" },
+  ],
+  gurugram: [
+    { name: "Amazon", type: "E-Commerce", time: "1-2 days" },
+    { name: "Flipkart", type: "E-Commerce", time: "1-2 days" },
+    { name: "Meesho", type: "E-Commerce", time: "2-3 days" },
+    { name: "BigBasket", type: "E-Commerce", time: "Same day / Next day" },
+    { name: "Blinkit", type: "Quick Commerce", time: "10-15 mins" },
+    { name: "Zepto", type: "Quick Commerce", time: "10-15 mins" },
+    { name: "Swiggy Instamart", type: "Quick Commerce", time: "10-18 mins" },
+    { name: "Zomato", type: "Food Delivery", time: "20-30 mins" },
+    { name: "Swiggy", type: "Food Delivery", time: "20-30 mins" },
+    { name: "Porter", type: "Courier", time: "Same day" },
+    { name: "Delhivery", type: "Courier", time: "1-2 days" },
+    { name: "DTDC", type: "Courier", time: "1-2 days" },
+    { name: "Uber", type: "Cab Services", time: "3-5 mins" },
+    { name: "Ola", type: "Cab Services", time: "3-5 mins" },
+    { name: "Rapido", type: "Cab Services", time: "2-4 mins" },
+  ],
 };
 
 var cityNames = {
@@ -582,6 +736,16 @@ var cityNames = {
   sinner: "Sinner",
   osmanabad: "Osmanabad",
   raigad: "Raigad",
+  delhi: "Delhi",
+  bangalore: "Bangalore",
+  hyderabad: "Hyderabad",
+  chennai: "Chennai",
+  kolkata: "Kolkata",
+  ahmedabad: "Ahmedabad",
+  jaipur: "Jaipur",
+  lucknow: "Lucknow",
+  bhopal: "Bhopal",
+  gurugram: "Gurugram",
 };
 
 var cityAliases = {
@@ -644,14 +808,17 @@ var serviceLinks = {
   "Porter": "https://www.porter.in",
   "Uber": "https://www.uber.com",
   "Ola": "https://www.olacabs.com",
-  "Rapido": "https://www.rapido.bike"
+  "Rapido": "https://www.rapido.bike",
+  "Delhivery": "https://www.delhivery.com",
+  "DTDC": "https://www.dtdc.in"
 };
 
 var availability247 = {
   "Amazon": false, "Flipkart": false, "Meesho": false, "BigBasket": false,
   "Blinkit": true, "Zepto": true, "Swiggy Instamart": true,
   "Zomato": false, "Swiggy": false, "Porter": false,
-  "Uber": true, "Ola": true, "Rapido": true
+  "Uber": true, "Ola": true, "Rapido": true,
+  "Delhivery": false, "DTDC": false
 };
 
 var typeClass = {
@@ -661,6 +828,18 @@ var typeClass = {
   "Courier": "type-courier",
   "Cab Services": "type-cab"
 };
+
+var cityCoords = { sangli: { lat: 16.8524, lng: 74.5815 }, nagpur: { lat: 21.1458, lng: 79.0882 }, mumbai: { lat: 19.0760, lng: 72.8777 }, pune: { lat: 18.5204, lng: 73.8567 }, kolhapur: { lat: 16.7050, lng: 74.2433 }, nashik: { lat: 19.9975, lng: 73.7898 }, solapur: { lat: 17.6599, lng: 75.9064 }, jalgaon: { lat: 21.0077, lng: 75.5626 }, thane: { lat: 19.2183, lng: 72.9781 }, aurangabad: { lat: 19.8762, lng: 75.3433 }, akola: { lat: 20.7002, lng: 77.0082 }, navimumbai: { lat: 19.0330, lng: 73.0297 }, mirabhayandar: { lat: 19.2952, lng: 72.8544 }, kalyan: { lat: 19.2437, lng: 73.1355 }, dombivli: { lat: 19.2183, lng: 73.0867 }, vasaivirar: { lat: 19.3919, lng: 72.8397 }, panvel: { lat: 18.9894, lng: 73.1175 }, ulhasnagar: { lat: 19.2215, lng: 73.1645 }, bhiwandi: { lat: 19.2813, lng: 73.0483 }, ambarnath: { lat: 19.1860, lng: 73.1876 }, badlapur: { lat: 19.1545, lng: 73.2286 }, palghar: { lat: 19.6968, lng: 72.7654 }, ahmednagar: { lat: 19.0948, lng: 74.7480 }, amravati: { lat: 20.9320, lng: 77.7523 }, latur: { lat: 18.3916, lng: 76.5604 }, nanded: { lat: 19.1383, lng: 77.3210 }, dhule: { lat: 20.9042, lng: 74.7749 }, malegaon: { lat: 20.5579, lng: 74.5089 }, chandrapur: { lat: 19.9615, lng: 79.2961 }, parbhani: { lat: 19.2610, lng: 76.7748 }, jalna: { lat: 19.8347, lng: 75.8816 }, wardha: { lat: 20.7453, lng: 78.5978 }, yavatmal: { lat: 20.3888, lng: 78.1204 }, washim: { lat: 20.1121, lng: 77.1331 }, gondia: { lat: 21.4624, lng: 80.1920 }, nandurbar: { lat: 21.3700, lng: 74.2400 }, lonavala: { lat: 18.7546, lng: 73.4062 }, mahabaleshwar: { lat: 17.9307, lng: 73.6477 }, shirdi: { lat: 19.7668, lng: 74.4770 }, matheran: { lat: 18.9866, lng: 73.2681 }, alibag: { lat: 18.6414, lng: 72.8722 }, ratnagiri: { lat: 16.9944, lng: 73.3000 }, sawantwadi: { lat: 15.9044, lng: 73.8178 }, sindhudurg: { lat: 16.0000, lng: 73.4614 }, kudal: { lat: 16.0126, lng: 73.6886 }, murud: { lat: 18.3266, lng: 72.9620 }, pen: { lat: 18.7369, lng: 73.0953 }, wai: { lat: 17.9565, lng: 73.8905 }, bhor: { lat: 18.1517, lng: 73.8440 }, khopoli: { lat: 18.7877, lng: 73.3426 }, karjat: { lat: 18.9105, lng: 73.3249 }, kolad: { lat: 18.4064, lng: 73.1359 }, mahad: { lat: 18.0834, lng: 73.4120 }, pandharpur: { lat: 17.6772, lng: 75.3269 }, miraj: { lat: 16.8264, lng: 74.6442 }, ichalkaranji: { lat: 16.6906, lng: 74.4596 }, karad: { lat: 17.2862, lng: 74.1839 }, satara: { lat: 17.6805, lng: 74.0183 }, baramati: { lat: 18.1515, lng: 74.5815 }, sinner: { lat: 19.8421, lng: 74.0047 }, osmanabad: { lat: 18.1860, lng: 76.0444 }, raigad: { lat: 18.5158, lng: 73.1822 }, delhi: { lat: 28.6139, lng: 77.2090 }, bangalore: { lat: 12.9716, lng: 77.5946 }, hyderabad: { lat: 17.3850, lng: 78.4867 }, chennai: { lat: 13.0827, lng: 80.2707 }, kolkata: { lat: 22.5726, lng: 88.3639 }, ahmedabad: { lat: 23.0225, lng: 72.5714 }, jaipur: { lat: 26.9124, lng: 75.7873 }, lucknow: { lat: 26.8467, lng: 80.9462 }, bhopal: { lat: 23.2599, lng: 77.4126 }, gurugram: { lat: 28.4595, lng: 77.0266 } };
+
+function getHaversineDistance(lat1, lon1, lat2, lon2) {
+  var R = 6371;
+  var dLat = (lat2 - lat1) * (Math.PI / 180);
+  var dLon = (lon2 - lon1) * (Math.PI / 180);
+  var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) * Math.sin(dLon/2) * Math.sin(dLon/2);
+  return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)));
+}
+
+
 
 /* --- DOM References --- */
 var searchInput = document.getElementById('city-search');
@@ -679,22 +858,24 @@ var activeFilter = 'All';
    ============================================ */
 
 searchInput.addEventListener('input', function () {
-  // Focus globe on India when user starts typing
-  if (this.value.trim().length === 1 && window.globeFocusLocation) {
-    window.globeFocusLocation('india');
-  }
-
   var query = this.value.trim().toLowerCase();
   dropdown.innerHTML = '';
 
   if (!query) {
     dropdown.classList.add('hidden');
     
-    // Reset layout and globe if input is cleared
+    // Reset layout if input is cleared
     var contentArea = document.getElementById('content-area');
     if (contentArea) contentArea.classList.remove('results-active');
     resultsSection.classList.add('hidden');
-    if (window.globeReset) window.globeReset();
+    
+    var mapContainer = document.getElementById('india-map');
+    if (mapContainer) {
+      mapContainer.classList.remove('map-dimmed');
+      document.querySelectorAll('.city-dot-group').forEach(function(g) {
+        g.classList.remove('highlight');
+      });
+    }
     
     return;
   }
@@ -791,20 +972,16 @@ searchInput.addEventListener('input', function () {
       li.className = 'dropdown-state-city';
       li.textContent = cityName;
 
-      // Check if this city exists in data (navigable)
       var cityKey = cityName.toLowerCase().replace(/[\s\-]/g, '');
-      if (data[cityKey]) {
-        li.setAttribute('data-city', cityKey);
-        li.addEventListener('click', function () {
-          selectCity(cityKey);
-        });
-      } else {
-        // City not in data — show as non-navigable hint
+      li.setAttribute('data-city', cityKey);
+      li.addEventListener('click', function () {
+        selectCity(cityKey, cityName);
+      });
+      if (!data[cityKey]) {
         var hint = document.createElement('span');
         hint.className = 'alias-hint';
         hint.textContent = ' (coming soon)';
         li.appendChild(hint);
-        li.style.cursor = 'default';
         li.style.opacity = '0.6';
       }
       dropdown.appendChild(li);
@@ -853,25 +1030,87 @@ document.addEventListener('click', function (e) {
    City Selection
    ============================================ */
 
-function selectCity(cityKey) {
+function selectCity(cityKey, originalCityName) {
   selectedCity = cityKey;
-  searchInput.value = cityNames[cityKey];
+  var displayName = cityNames[cityKey] || originalCityName || cityKey;
+  searchInput.value = displayName;
   dropdown.classList.add('hidden');
-
-  resultsHeading.textContent = 'Services in ' + cityNames[cityKey];
-  activeFilter = 'All';
-
-  filterPills.forEach(function (p) {
-    p.classList.toggle('active', p.getAttribute('data-filter') === 'All');
-  });
-
-  renderServices();
-  resultsSection.classList.remove('hidden');
-
-  // Trigger globe animation & layout transition
+  
   var contentArea = document.getElementById('content-area');
   if (contentArea) contentArea.classList.add('results-active');
-  if (window.globeFocusLocation) window.globeFocusLocation(cityKey);
+  resultsSection.classList.remove('hidden');
+
+  var mapContainer = document.getElementById('india-map');
+  if (mapContainer) {
+    mapContainer.classList.add('map-dimmed');
+    document.querySelectorAll('.city-dot-group').forEach(function(g) {
+      if (g.getAttribute('data-city') === cityKey) {
+        g.classList.add('highlight');
+      } else {
+        g.classList.remove('highlight');
+      }
+    });
+  }
+
+  if (data[cityKey]) {
+    document.getElementById('no-data-message').classList.add('hidden');
+    document.getElementById('filter-pills').classList.remove('hidden');
+    document.querySelector('.table-container').classList.remove('hidden');
+    servicesCards.classList.remove('hidden');
+
+    resultsHeading.textContent = 'Services in ' + displayName;
+    activeFilter = 'All';
+
+    filterPills.forEach(function (p) {
+      p.classList.toggle('active', p.getAttribute('data-filter') === 'All');
+    });
+
+    renderServices();
+
+
+  } else {
+    document.getElementById('no-data-message').classList.remove('hidden');
+    document.getElementById('filter-pills').classList.add('hidden');
+    document.querySelector('.table-container').classList.add('hidden');
+    servicesCards.classList.add('hidden');
+
+    resultsHeading.textContent = '';
+    var noDataTitle = document.querySelector('.no-data-title');
+    if (noDataTitle) noDataTitle.textContent = 'No data available for ' + displayName + ' yet';
+
+    fetch('https://nominatim.openstreetmap.org/search?q=' + encodeURIComponent(displayName) + ',India&format=json&limit=1')
+      .then(res => res.json())
+      .then(resData => {
+        if (resData && resData.length > 0) {
+          var lat = parseFloat(resData[0].lat);
+          var lon = parseFloat(resData[0].lon);
+
+          var closestCity = null;
+          var minDistance = Infinity;
+          
+          for (var key in cityCoords) {
+            var coords = cityCoords[key];
+            var dist = getHaversineDistance(lat, lon, coords.lat, coords.lng);
+            if (dist < minDistance) {
+              minDistance = dist;
+              closestCity = key;
+            }
+          }
+          
+          if (closestCity) {
+            var suggestionContainer = document.getElementById('suggestion-container');
+            suggestionContainer.innerHTML = '';
+            var btn = document.createElement('button');
+            btn.className = 'suggestion-btn';
+            btn.innerHTML = cityNames[closestCity] + ' <span class="suggestion-arrow">\u2192</span>';
+            btn.onclick = function() {
+              selectCity(closestCity);
+            };
+            suggestionContainer.appendChild(btn);
+          }
+        }
+      });
+  }
 }
 
 /* ============================================
@@ -891,16 +1130,68 @@ filterPills.forEach(function (pill) {
    Render Services (Table + Cards)
    ============================================ */
 
+var ALL_SERVICES = [
+  { name: "Amazon", type: "E-Commerce" },
+  { name: "Flipkart", type: "E-Commerce" },
+  { name: "Meesho", type: "E-Commerce" },
+  { name: "BigBasket", type: "E-Commerce" },
+  { name: "Blinkit", type: "Quick Commerce" },
+  { name: "Zepto", type: "Quick Commerce" },
+  { name: "Swiggy Instamart", type: "Quick Commerce" },
+  { name: "Zomato", type: "Food Delivery" },
+  { name: "Swiggy", type: "Food Delivery" },
+  { name: "Porter", type: "Courier" },
+  { name: "Delhivery", type: "Courier" },
+  { name: "DTDC", type: "Courier" },
+  { name: "Uber", type: "Cab Services" },
+  { name: "Ola", type: "Cab Services" },
+  { name: "Rapido", type: "Cab Services" }
+];
+
 function renderServices() {
   if (!selectedCity) return;
 
-  var services = data[selectedCity];
-  var filtered = (activeFilter === 'All')
-    ? services
-    : services.filter(function (s) { return s.type === activeFilter; });
+  var cityServices = data[selectedCity] || [];
+  
+  // Create mapping of city's available services by name for quick lookup
+  var availableMap = {};
+  cityServices.forEach(function (s) {
+    availableMap[s.name] = s;
+  });
 
+  var availableList = [];
+  var unavailableList = [];
+
+  ALL_SERVICES.forEach(function (service) {
+    // Check if it matches the active filter
+    if (activeFilter !== 'All' && service.type !== activeFilter) {
+      return;
+    }
+
+    if (availableMap[service.name]) {
+      // It is available. Use the data from the city's services (like custom time)
+      availableList.push({
+        name: service.name,
+        type: service.type,
+        time: availableMap[service.name].time,
+        available: true
+      });
+    } else {
+      // It is unavailable.
+      unavailableList.push({
+        name: service.name,
+        type: service.type,
+        time: "—",
+        available: false
+      });
+    }
+  });
+
+  // Render Table
   servicesBody.innerHTML = '';
-  filtered.forEach(function (service) {
+  
+  // 1. Render available rows
+  availableList.forEach(function (service) {
     var row = document.createElement('tr');
     var is247 = availability247[service.name] || false;
     var availClass = is247 ? 'avail-yes' : 'avail-no';
@@ -915,8 +1206,33 @@ function renderServices() {
     servicesBody.appendChild(row);
   });
 
+  // 2. Render separator row if there are both available and unavailable
+  if (availableList.length > 0 && unavailableList.length > 0) {
+    var sepRow = document.createElement('tr');
+    sepRow.className = 'table-separator-row';
+    sepRow.innerHTML = '<td colspan="4">Unavailable Services</td>';
+    servicesBody.appendChild(sepRow);
+  }
+
+  // 3. Render unavailable rows
+  unavailableList.forEach(function (service) {
+    var row = document.createElement('tr');
+    row.className = 'row-unavailable';
+    var link = serviceLinks[service.name] || '#';
+
+    row.innerHTML =
+      '<td><a class="service-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + service.name + '<span class="ext-arrow">\u2197</span></a></td>' +
+      '<td><span class="type-tag type-unavailable">Not available</span></td>' +
+      '<td>—</td>' +
+      '<td><span class="avail-pill avail-no"><span class="avail-dot"></span>—</span></td>';
+    servicesBody.appendChild(row);
+  });
+
+  // Render Cards
   servicesCards.innerHTML = '';
-  filtered.forEach(function (service) {
+
+  // 1. Render available cards
+  availableList.forEach(function (service) {
     var is247 = availability247[service.name] || false;
     var availClass = is247 ? 'avail-yes' : 'avail-no';
     var availLabel = is247 ? 'Yes' : 'No';
@@ -934,4 +1250,109 @@ function renderServices() {
       '</div>';
     servicesCards.appendChild(card);
   });
+
+  // 2. Render separator card if both exist
+  if (availableList.length > 0 && unavailableList.length > 0) {
+    var sepCard = document.createElement('div');
+    sepCard.className = 'cards-separator';
+    sepCard.textContent = 'Unavailable Services';
+    servicesCards.appendChild(sepCard);
+  }
+
+  // 3. Render unavailable cards
+  unavailableList.forEach(function (service) {
+    var link = serviceLinks[service.name] || '#';
+    var card = document.createElement('div');
+    card.className = 'service-card card-unavailable';
+    card.innerHTML =
+      '<div class="card-header">' +
+      '<a class="service-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + service.name + '<span class="ext-arrow">\u2197</span></a>' +
+      '<span class="type-tag type-unavailable">Not available</span>' +
+      '</div>' +
+      '<div class="card-meta">' +
+      '<span class="card-time">—</span>' +
+      '<span class="avail-pill avail-no"><span class="avail-dot"></span>24\u00d77: —</span>' +
+      '</div>';
+    servicesCards.appendChild(card);
+  });
 }
+
+/* ============================================
+   Map Initialization
+   ============================================ */
+function initMap() {
+  var cityDotsGroup = document.getElementById('city-dots');
+  var mapTooltip = document.getElementById('map-tooltip');
+  var indiaMap = document.getElementById('india-map');
+  var indiaMapContainer = document.getElementById('india-map-container');
+  if (!cityDotsGroup) return;
+
+  var minLon = 68.176645;
+  var maxLon = 97.402561;
+  var minLat = 7.965535;
+  var maxLat = 35.49401;
+  var mapWidth = 500;
+  var mapHeight = 550;
+
+  for (var key in cityCoords) {
+    if (data[key]) {
+      var coords = cityCoords[key];
+      // Equirectangular projection mapping to viewbox coordinates
+      var x = ((coords.lng - minLon) / (maxLon - minLon)) * mapWidth;
+      var y = ((maxLat - coords.lat) / (maxLat - minLat)) * mapHeight;
+
+      var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      g.setAttribute("class", "city-dot-group");
+      g.setAttribute("data-city", key);
+      
+      var pulse = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      pulse.setAttribute("class", "city-pulse");
+      pulse.setAttribute("cx", x);
+      pulse.setAttribute("cy", y);
+      pulse.setAttribute("r", "4");
+      
+      var dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      dot.setAttribute("class", "city-dot");
+      dot.setAttribute("cx", x);
+      dot.setAttribute("cy", y);
+      dot.setAttribute("r", "4");
+      
+      g.appendChild(pulse);
+      g.appendChild(dot);
+      
+      g.addEventListener('mouseenter', function(e) {
+        var cityKey = this.getAttribute('data-city');
+        mapTooltip.textContent = cityNames[cityKey];
+        mapTooltip.classList.remove('hidden');
+        
+        var svgRect = indiaMap.getBoundingClientRect();
+        var dotEl = this.querySelector('.city-dot');
+        var cx = parseFloat(dotEl.getAttribute('cx'));
+        var cy = parseFloat(dotEl.getAttribute('cy'));
+        
+        var scaleX = svgRect.width / mapWidth;
+        var scaleY = svgRect.height / mapHeight;
+        
+        mapTooltip.style.left = (cx * scaleX) + 'px';
+        mapTooltip.style.top = (cy * scaleY) + 'px';
+      });
+      
+      g.addEventListener('mouseleave', function() {
+        mapTooltip.classList.add('hidden');
+      });
+      
+      g.addEventListener('click', function() {
+        var cityKey = this.getAttribute('data-city');
+        selectCity(cityKey);
+        var resultsEl = document.getElementById('results');
+        if (resultsEl) {
+          resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      cityDotsGroup.appendChild(g);
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', initMap);
